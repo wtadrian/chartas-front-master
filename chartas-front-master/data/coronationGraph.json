@@ -1,0 +1,84 @@
+{
+  "nodes": [
+    {
+      "label": "Event",
+      "name": "Boleslaw Chrobry",
+      "description": "Boleslaw Chrobry was the very first Polish king.",
+      "id": "event:1"
+    },
+    {
+      "label": "Event",
+      "name": "Boleslaw Chrobry's Coronation",
+      "description": "The splendor of the royal crown has accompanied the prince for a quarter of a century, since at the memorable Gniezno Congress in 1000, Emperor Otto III symbolically imposed his own tiara on his temple.",
+      "id": "event:2"
+    },
+    {
+      "label": "Coordinates",
+      "coordinates": [17.594520, 52.537470],
+      "id": "coordinates:3"
+    },
+    {
+      "label": "Interval",
+      "start": "1025-04-18",
+      "end": "1025-04-25",
+      "commenceUncertainty": 60,
+      "terminationUncertainty": 0,
+      "id": "interval:4"
+    },
+    {
+      "label": "Interval",
+      "start": "1025-04-18",
+      "end": "1025-04-25",
+      "id": "interval:5"
+    },
+    {
+      "label": "Reference",
+      "title": "Monumenta Poloniae Historica",
+      "author": "August Bielowski,",
+      "source": "kpbc.umk.pl/publication/10067",
+      "id": "reference:6"
+    },
+    {
+      "label": "Coordinates",
+      "coordinates": [[[17.594520, 52.537470],[17.194520, 52.537470], [17.194520, 52.937470], [17.594520, 52.937470]]],
+      "id": "coordinates:7"
+    }
+  ],
+  "edges": [
+    {
+      "from": "event:1",
+      "to": "event:2",
+      "label": "PARTICIPANT"
+    },
+    {
+      "from": "event:2",
+      "to": "coordinates:3",
+      "label": "WHERE"
+    },
+    {
+      "from": "event:2",
+      "to": "interval:4",
+      "label": "WHEN"
+    },
+    {
+      "from": "event:1",
+      "to": "interval:5",
+      "label": "WHEN"
+    },
+    {
+      "from": "event:1",
+      "to": "reference:6",
+      "label": "REFERENCED"
+    },
+    {
+      "from": "event:2",
+      "to": "reference:6",
+      "label": "REFERENCED"
+    },
+    {
+      "from": "event:1",
+      "to": "coordinates:7",
+      "label": "WHERE"
+    }
+  ]
+}

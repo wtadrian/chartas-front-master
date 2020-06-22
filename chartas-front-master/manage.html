@@ -1,0 +1,118 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+      <script type = "text/javascript" src = "scripts/domain.js" ></script>
+      <script type = "text/javascript" src = "scripts/manage.js" ></script>
+   </head>
+   <body>
+       <div class="topnav">
+           <a class="active" href="./index.html">Home</a>
+           <a href="chronology.html">Chronology</a>
+           <a href="./map.html">Map</a>
+           <a href="./graph.html">Graph</a>
+           <div class="topnav-right">
+               <a href="./manage.html">Manage</a>
+               <a href="./settings.html">Settings</a>
+               <button id="mode">Offline</button>
+           </div>
+       </div>
+
+       <div class="left-panel">
+           <div class="insert-popup" id="insertEvent">
+               <h1>Create Event</h1>
+               <label for="eventName">Event name</label>
+               <input id="eventName" type="text" placeholder="Name ...">
+               <label for="eventDescription">Event description</label>
+               <textarea id = "eventDescription" rows="8" cols="10" placeholder="Description ..."></textarea>
+
+               <button type="submit" onclick="addEvent()">Add</button>
+               <button type="submit" onclick="closeForm('Event')">Close</button>
+           </div>
+
+           <div class="insert-popup" id="insertInterval">
+               <h1>Create Interval</h1>
+               <label for="date">Start date</label>
+               <input id="date" type="text" placeholder="Starts ...">
+               <label for="duration">Duration</label>
+               <input id="duration" type="text" placeholder="Duration ...">
+               <label for="uncStart">Commence uncertainty</label>
+               <input id="uncStart" type="text" placeholder="for fuzzy interval ...">
+               <label for="uncTermination">Termination uncertainty</label>
+               <input id="uncTermination" type="text" placeholder="for fuzzy interval ...">
+
+               <button type="submit" onclick="addInterval()">Add</button>
+               <button type="submit" onclick="closeForm('Interval')">Close</button>
+           </div>
+
+           <div class="insert-popup" id="insertCoordinates">
+               <h1>Create Coordinates</h1>
+               <label for="coords">Event Coordinates</label>
+               <textarea id="coords" rows="8" cols="10" placeholder="coords ..."></textarea>
+
+               <button type="submit" onclick="addCoordinates()">Add</button>
+               <button type="submit" onclick="closeForm('Coordinates')">Close</button>
+           </div>
+
+           <div class="insert-popup" id="insertReference">
+               <h1>Create Reference</h1>
+               <label for="title">Title</label>
+               <input id="title" type="text" placeholder="Titled ...">
+               <label for="author">Author</label>
+               <input id="author" type="text" placeholder="Author ...">
+               <label for="source">Source</label>
+               <input id="source" type="text" placeholder="Source ...">
+
+               <button type="submit" onclick="addReference()">Add</button>
+               <button type="submit" onclick="closeForm('Reference')">Close</button>
+           </div>
+
+           <div class="inspector">
+               <p id="parameter_1"></p>
+               <p id="parameter_2"></p>
+               <p id="parameter_3"></p>
+               <p id="parameter_4"></p>
+               <p id="parameter_5"></p>
+               <p id="parameter_6"></p>
+           </div>
+       </div>
+
+       <div class="content">
+           <div id="buttons">
+               <button id="addEvent" onclick="openForm('Event')">Create Event</button>
+               <button id="addInterval" onclick="openForm('Interval')">Create Interval</button>
+               <button id="addCoordinates" onclick="openForm('Coordinates')">Create Coordinates</button>
+               <button id="addReference" onclick="openForm('Reference')">Create Reference</button>
+           </div>
+           <div id="lists">
+               <ul id="events"></ul>
+               <ul id="intervals"></ul>
+               <ul id="coordinates"></ul>
+               <ul id="references"></ul>
+           </div>
+           <div id="connectors">
+               <div>
+                   <label for="outgoing">First element</label>
+                   <input id="outgoing" type="text" placeholder="Outgoing ...">
+                   <button id="check" onclick="check()">Check connection</button>
+               </div>
+               <div>
+                   <label for="ingoing">Second element</label>
+                   <input id="ingoing" type="text" placeholder="Ingoing ...">
+                   <button id="attach" onclick="attach()">Attach</button>
+               </div>
+               <div>
+                   <label for="label">Label</label>
+                   <input id="label" type="text" placeholder="Connect only events">
+                   <button id="detach" onclick="detach()">Detach</button>
+               </div>
+               <div>
+                   <label for="deleteId">Delete Id</label>
+                   <input id="deleteId" type="text" placeholder="Connect only events">
+                   <button id="deleteBtn" onclick="deleteEntity()">Delete</button>
+               </div>
+           </div>
+       </div>
+
+       <script type="text/javascript" src="scripts/utils.js"></script>
+   </body>
+</html>

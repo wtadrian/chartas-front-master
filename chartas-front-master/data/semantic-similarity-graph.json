@@ -1,0 +1,752 @@
+{
+    "nodes": [
+      {
+        "label": "Author",
+        "name": "Philip Resnik",
+        "id": "author-resnik"
+      },
+      {
+        "label": "Method",
+        "name": "Node-based - Information Content",
+        "description": "The method uses shared information content that is informtion content of the concepts' parents (in the hierarchy) to determine the similarity between them.",
+        "id": "method-IC"
+      },
+      {
+        "label": "Reference",
+        "title": "Semantic Similarity in a Taxonomy: An Information-Based Measure and its Application to Problems of Ambiguity in Natural Language",
+        "id": "resnik1999semantic"
+      },
+      {
+        "label": "Author",
+        "name": "Dekang Lin",
+        "id": "author-lin"
+      },
+      {
+        "label": "Method",
+        "name": "Node-based - Tree-based similarity",
+        "description": "The Lin's measure presents the similarity as the ration between the LCS IC and the sum of IC of considered concepts.",
+        "id": "method-treebased"
+      },
+      {
+        "label": "Reference",
+        "title": "An Information-Theoretic Definition of Similarity",
+        "id": "lin1998information"
+      },
+      {
+        "label": "Author",
+        "name": "Wu et al.",
+        "id": "author-wuetal"
+      },
+      {
+        "label": "Method",
+        "name": "Edge-based - AHMD Value",
+        "description": "We first evaluate the functional relationships among genes from three different perspectives: one based on GO assignments and the other two based on comparative genome analysis. We, then, combine these different measures by using a Bayesian inference to predict functional modules.",
+        "id": "method-ahmd"
+      },
+      {
+        "label": "Reference",
+        "title": "Prediction of functional modules based on comparative genome analysis and Gene Ontology application",
+        "id": "wu2005prediction"
+      },
+      {
+        "label": "Author",
+        "name": "Pozo et al.",
+        "id": "author-pozoetal"
+      },
+      {
+        "label": "Method",
+        "name": "Edge-based - Pozo et al.",
+        "description": "We propose a new method to derive 'functional distances' between GO terms that is based on the simultaneous occurrence of terms in the same set of Interpro entries, instead of relying on the structure of the GO.",
+        "id": "method-pozoetal"
+      },
+      {
+        "label": "Reference",
+        "title": "Defining functional distances over Gene Ontology",
+        "id": "del2008defining"
+      },
+      {
+        "label": "Author",
+        "name": "Benabderrahmane et al.",
+        "id": "author-bena"
+      },
+      {
+        "label": "Method",
+        "name": "Edge-based - IntelliGO",
+        "description": "We present here a new semantic similarity measure called IntelliGO which integrates several complementary properties in a novel vector space model. The coefficients associated with each GO term that annotates a given gene or protein include its information content as well as a customized value for each type of GO evidence code. The generalized cosine similarity measure, used for calculating the dot product between two vectors, has been rigorously adapted to the context of the GO graph.",
+        "id": "method-intelligo"
+      },
+      {
+        "label": "Reference",
+        "title": "IntelliGO: a new vector-based semantic similarity measure including annotation origin",
+        "id": "benabderrahmane2010intelligo"
+      },
+      {
+        "label": "Author",
+        "name": "Pekar et al.",
+        "id": "author-pekar"
+      },
+      {
+        "label": "Method",
+        "name": "Edge-based - \"Tree Ascending\" classification algorithm",
+        "description": "Proposing a “tree ascending” classification algorithm which extends the kNN method by making use of the taxonomic similarity between nearest neighbors. ",
+        "id": "method-treeascend"
+      },
+      {
+        "label": "Reference",
+        "title": "Taxonomy learning. Proceedings of the 19th international conference on Computational linguistics",
+        "id": "pekar2002taxonomy"
+      },
+      {
+        "label": "Author",
+        "name": "Rodriguez, Egenhofer",
+        "id": "author-rodriguez"
+      },
+      {
+        "label": "Method",
+        "name": "Feature-based - Rodriguez et al",
+        "description": "An approach to computing semantic similarity that relaxes the requirement of a single ontology and accounts for differences in the levels of explicitness and formalization of the different ontology specifications. A similarity function determines similar entity classes by using a matching process over synonym sets, semantic neighborhoods, and distinguishing features that are classified into parts, functions, and attributes.",
+        "id": "method-rodriguez"
+      },
+      {
+        "label": "Reference",
+        "title": "Determining semantic similarity among entity classes from different ontologies",
+        "id": "rodriguez2003determining"
+      },
+      {
+        "label": "Author",
+        "name": "Petrakis, Varelas, Hliaoutakis",
+        "id": "author-petrakis"
+      },
+      {
+        "label": "Method",
+        "name": "Feature-based - X-Similarity",
+        "description": "X-Similarity relies on matching between synsets and term description sets. The term description sets contain words extracted by parsing term definitions (“glosses” in WordNet or “scope notes” in MeSH). Two terms are similar if their synsets or description sets or, the synsets of the terms in their neighborhood (e.g., more specific and more general terms) are lexically similar.",
+        "id": "method-xsimilarity"
+      },
+      {
+        "label": "Reference",
+        "title": "X-Similarity: Computing Semantic Similarity between Concepts from Different Ontologies",
+        "id": "petrakis2006x"
+      },
+      {
+        "label": "Author",
+        "name": "Amost Tversky",
+        "id": "author-tversky"
+      },
+      {
+        "label": "Method",
+        "name": "Feature-based - Contrast Model of Similarity",
+        "description": "Similarity of the objects as linear combination or a contrast of the measures of their common and disctinctive features. He defines similarity as a matching process. He also introduced less known ration model where he describest similarity as a function of common features devided by the number of all common and disjunctive features of both stimuli.",
+        "id": "method-contrast"
+      },
+      {
+        "label": "Reference",
+        "title": "Features of Similarity",
+        "id": "tversky1977features"
+      },
+      {
+        "label": "Author",
+        "name": "Wang et al.",
+        "id": "author-wang"
+      },
+      {
+        "label": "Method",
+        "name": "Hybrid - Wang et al.",
+        "description": "GO term is turned into a numeric string and then the similarity is calculated based on them.",
+        "id": "method-wang"
+      },
+      {
+        "label": "Reference",
+        "title": "A new method to measure the semantic similarity of GO terms",
+        "id": "wang2007new"
+      },
+      {
+        "label": "Author",
+        "name": "Othman et al.",
+        "id": "author-othman"
+      },
+      {
+        "label": "Method",
+        "name": "Hybrid - Othman et al.",
+        "description": "The genetic similarity algorithm combines semantic similarity measure algorithm with parallel genetic algorithm. The semantic similarity measure algorithm is used to compute the similitude strength between the Gene Ontology terms. Then, the parallel genetic algorithm is employed to perform batch retrieval and to accelerate the search in large search space of the Gene Ontology graph.",
+        "id": "method-othman"
+      },
+      {
+        "label": "Reference",
+        "title": "A genetic similarity algorithm for searching the Gene Ontology terms and annotating anonymous protein sequences",
+        "id": "othman2008genetic"
+      },
+      {
+        "label": "Author",
+        "name": "Knappe et al.",
+        "id": "author-knappe"
+      },
+      {
+        "label": "Method",
+        "name": "Hybrid - Knappe",
+        "description": "Similarity method based on decomposition, upwards expansion and aggregation of possible paths between concepts based on the notion of shared nodes.",
+        "id": "method-knappe"
+      },
+      {
+        "label": "Reference",
+        "title": "On similarity measures for content-based querying",
+        "id": "knappe2003similarity"
+      },
+      {
+        "label": "Author",
+        "name": "Zhou et al.",
+        "id": "author-zhou"
+      },
+      {
+        "label": "Method",
+        "name": "Hybrid -  Zhou et al. ",
+        "description": "The model takes the path length between two concepts and IC value of each concept as its metric, furthermore, the weight of two metrics can be adapted artificially",
+        "id": "method-zhou"
+      },
+      {
+        "label": "Reference",
+        "title": "New model of semantic similarity measuring in wordnet",
+        "id": "zhou2008new"
+      },
+      {
+        "label": "Author",
+        "name": "Couto et al.",
+        "id": "author-couto"
+      },
+      {
+        "label": "Method",
+        "name": "Node-based - GraSM - Graph-based Similarity Measure",
+        "description": "When calculating the semantic similarity of two concepts, GraSM selects the disjunctive common ancestors rather than only using the most informative common ancestor.",
+        "id": "method-grasm"
+      },
+      {
+        "label": "Reference",
+        "title": "Semantic Similarity over the Gene Ontology: Family Correlation and Selecting Disjunctive Ancestors",
+        "id": "couto2005semantic"
+      },
+      {
+        "label": "Author",
+        "name": "Schlicker et al.",
+        "id": "author-schlicker"
+      },
+      {
+        "label": "Method",
+        "name": "Node-based - Schlicker et al.",
+        "description": "The method relies on two semantic similarity measures; simRel and funSim. One measure (simRel) is applied in the comparison of the biological processes found in different groups of organisms. The other measure (funSim) is used to find functionally related gene products within the same or between different genomes.",
+        "id": "method-schlicker"
+      },
+      {
+        "label": "Reference",
+        "title": "A new measure for functional similarity of gene products based on Gene Ontology",
+        "id": "schlicker2006new"
+      },
+      {
+        "label": "Author",
+        "name": "Mohammad et al.",
+        "id": "author-mohammad"
+      },
+      {
+        "label": "Method",
+        "name": "Node-based - Semantic Signature",
+        "description": "Proposing new way of representing semantic meaning \"Semantic Signature\" + 3 methods for comparing these signatures; a unified approach to semantic similarity across multiple representation levels from senses to documents; unified representation of the meaning of an arbitrarily-sized piece of text, referred to as a lexical item, using a sense-based probability distribution; alignment-based method for word sense disambiguation.",
+        "id": "method-semanticsignature"
+      },
+      {
+        "label": "Reference",
+        "title": "Align, Disambiguate, and Walk: Random walks on Semantic Networks",
+        "id": "pilehvar2013align"
+      },
+      {
+        "label": "Author",
+        "name": "Maguitman et al.",
+        "id": "author-maguitman"
+      },
+      {
+        "label": "Method",
+        "name": "Node-based - Maguitman et al.",
+        "description": "It measures similarity in similar way as Lin's method, but it generalizes it into ontology concept. The LCS for example is defined by adding weights to different types of connections and measuring the total score.",
+        "id": "method-maguitman"
+      },
+      {
+        "label": "Reference",
+        "title": "Algorithmic Detection of Semantic Similarity",
+        "id": "maguitman2005algorithmic"
+      },
+      {
+        "label": "Author",
+        "name": "Jiang and Conrath",
+        "id": "author-jiang"
+      },
+      {
+        "label": "Method",
+        "name": "Node-based - Jiang and Conrath",
+        "description": "The distance between concepts in this method is the difference between sum of the information content of those two concepts and information content of the closest parent that subsumes them both.",
+        "id": "method-jiang"
+      },
+      {
+        "label": "Reference",
+        "title": "Semantic Similarity Based on Corpus Statistics and Lexical Taxonomy",
+        "id": "jiang1997semantic"
+      },
+      {
+        "label": "Author",
+        "name": "Fahndrich et al.",
+        "id": "author-fahndrich"
+      },
+      {
+        "label": "Method",
+        "name": "Semantic - MP",
+        "description": "First decomposing the concepts into semantic primes, then incorporating filtering out the terms that have not been activated by at least two of the start activations.Then it's normalised by the number of start activation to obtain semantic distance.",
+        "id": "method-mp"
+      },
+      {
+        "label": "Reference",
+        "title": "Design and Use of a Semantic Similarity Measure for Interoperability Among Agents",
+        "id": "fahndrich2016design"
+      },
+      {
+        "label": "Author",
+        "name": "Slimani et al.",
+        "id": "author-slimani"
+      },
+      {
+        "label": "Method",
+        "name": "Structure-based - TBK",
+        "description": "It is ratio between distance from root to closest common ancestor of 2 terms and the path between terms routed through root node. Minus a Penalty Function (which penalizes only neighboring nodes).",
+        "id": "method-tbk"
+      },
+      {
+        "label": "Reference",
+        "title": "A New Similarity Measure based on Edge Counting",
+        "id": "slimani2006new"
+      },
+      {
+        "label": "Author",
+        "name": "Rada et al.",
+        "id": "author-rada"
+      },
+      {
+        "label": "Method",
+        "name": "Structure-based - Shortest Path",
+        "description": "It is measured by subtracting the shortest path between the concepts in the hierarchy from doubled longest path in the hierarchy between the concepts.",
+        "id": "method-shortestpath"
+      },
+      {
+        "label": "Reference",
+        "title": "Development and application of a metric on semantic nets",
+        "id": "rada1989development"
+      },
+      {
+        "label": "Author",
+        "name": "Wu and Palmer",
+        "id": "author-wupalmer"
+      },
+      {
+        "label": "Method",
+        "name": "Structure-based - Wu and Palmer",
+        "description": "Ratio between the doubled distance from most specific comon concept to the root concept and sum of distances between the concepts and most specific comon concept and agan doubled distance from most specific comon concept to the root concept.",
+        "id": "method-wupalmer"
+      },
+      {
+        "label": "Reference",
+        "title": "Verbs semantics and lexical selection",
+        "id": "wu1994verbs"
+      },
+      {
+        "label": "Author",
+        "name": "Richardson et al.",
+        "id": "author-richardson"
+      },
+      {
+        "label": "Method",
+        "name": "Structure-based - Weighted Links",
+        "description": "Information content of the first class in the noun hierarchy that subsumes both classes. ",
+        "id": "method-weighted"
+      },
+      {
+        "label": "Reference",
+        "title": "Using WordNet as a knowledge base for measuring semantic similarity between words",
+        "id": "richardson1994using"
+      },
+      {
+        "label": "Author",
+        "name": "Li et al.",
+        "id": "author-li"
+      },
+      {
+        "label": "Method",
+        "name": "Structure-based - Li et. al",
+        "description": "Non linear function combining taxonomy depth, shortest path between concepts and a \"semantic vector\" to calculate similarity with arbitrary weights defined by the user.",
+        "id": "method-li"
+      },
+      {
+        "label": "Reference",
+        "title": "An approach for measuring semantic similarity between words using multiple information sources",
+        "id": "li2003approach"
+      },
+      {
+        "label": "Author",
+        "name": "Leacock and Chodorow",
+        "id": "author-leacock"
+      },
+      {
+        "label": "Method",
+        "name": "Structure-based - Leacock and Chodorow",
+        "description": "Calculates similarity as a log of, divided by doubled max hierarchy depth, shortest path between the terms.",
+        "id": "method-leacock"
+      },
+      {
+        "label": "Reference",
+        "title": "Filling in a sparse training space for word sense identification",
+        "id": "leacock1994filling"
+      },
+      {
+        "label": "Author",
+        "name": "Hirst and St-Onge",
+        "id": "author-hirst"
+      },
+      {
+        "label": "Method",
+        "name": "Structure-based - HSO",
+        "description": "It calculates relatedness between concepts using the path distance between the concept nodes, number of changes in direction of the path connecting two concepts and the allowableness of the path. If there is a close relation between meanings of two concepts or words, then the concepts are said to be semantically related to each other.",
+        "id": "method-hso"
+      },
+      {
+        "label": "Reference",
+        "title": "Lexical chains as representations of context for the detection and correction of malapropisms",
+        "id": "hirst1998lexical"
+      }                              
+    ],
+    "edges": [
+      {
+        "from": "author-resnik",
+        "to": "method-IC",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "author-lin",
+        "to": "method-treebased",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "resnik1999semantic",
+        "to": "method-IC",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "lin1998information",
+        "to": "method-treebased",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-wuetal",
+        "to": "method-ahmd",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "wu2005prediction",
+        "to": "method-ahmd",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-pozoetal",
+        "to": "method-pozoetal",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "del2008defining",
+        "to": "method-pozoetal",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-bena",
+        "to": "method-intelligo",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "benabderrahmane2010intelligo",
+        "to": "method-intelligo",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-pekar",
+        "to": "method-treeascend",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "pekar2002taxonomy",
+        "to": "method-treeascend",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-rodriguez",
+        "to": "method-rodriguez",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "rodriguez2003determining",
+        "to": "method-rodriguez",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-petrakis",
+        "to": "method-xsimilarity",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "petrakis2006x",
+        "to": "method-xsimilarity",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-tversky",
+        "to": "method-contrast",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "tversky1977features",
+        "to": "method-contrast",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-wang",
+        "to": "method-wang",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "wang2007new",
+        "to": "method-wang",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-othman",
+        "to": "method-othman",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "othman2008genetic",
+        "to": "method-othman",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-knappe",
+        "to": "method-knappe",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "knappe2003similarity",
+        "to": "method-knappe",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-zhou",
+        "to": "method-zhou",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "zhou2008new",
+        "to": "method-zhou",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-couto",
+        "to": "method-grasm",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "couto2005semantic",
+        "to": "method-grasm",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-schlicker",
+        "to": "method-schlicker",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "schlicker2006new",
+        "to": "method-schlicker",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-mohammad",
+        "to": "method-semanticsignature",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "pilehvar2013align",
+        "to": "method-semanticsignature",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-maguitman",
+        "to": "method-maguitman",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "maguitman2005algorithmic",
+        "to": "method-maguitman",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-jiang",
+        "to": "method-jiang",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "jiang1997semantic",
+        "to": "method-jiang",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-fahndrich",
+        "to": "method-mp",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "fahndrich2016design",
+        "to": "method-mp",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-slimani",
+        "to": "method-tbk",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "slimani2006new",
+        "to": "method-tbk",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-rada",
+        "to": "method-shortestpath",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "rada1989development",
+        "to": "method-shortestpath",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-wupalmer",
+        "to": "method-wupalmer",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "wu1994verbs",
+        "to": "method-wupalmer",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-richardson",
+        "to": "method-weighted",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "richardson1994using",
+        "to": "method-weighted",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-li",
+        "to": "method-li",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "li2003approach",
+        "to": "method-li",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-leacock",
+        "to": "method-leacock",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "leacock1994filling",
+        "to": "method-leacock",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "author-hirst",
+        "to": "method-hso",
+        "label": "AUTHOR"
+      },
+      {
+        "from": "hirst1998lexical",
+        "to": "method-hso",
+        "label": "ARTICLE"
+      },
+      {
+        "from": "method-contrast",
+        "to": "method-rodriguez",
+        "label": "INFLUENCED"
+      },
+      {
+        "from": "method-rodriguez",
+        "to": "method-xsimilarity",
+        "label": "INFLUENCED"
+      },
+      {
+        "from": "method-shortestpath",
+        "to": "method-li",
+        "label": "INFLUENCED"
+      },
+      {
+        "from": "method-IC",
+        "to": "method-treebased",
+        "label": "INFLUENCED"
+      },
+      {
+        "from": "method-IC",
+        "to": "method-schlicker",
+        "label": "INFLUENCED"
+      },
+      {
+        "from": "method-IC",
+        "to": "method-jiang",
+        "label": "INFLUENCED"
+      },
+      {
+        "from": "method-weighted",
+        "to": "method-IC",
+        "label": "INFLUENCED"
+      },
+      {
+        "from": "method-wupalmer",
+        "to": "method-IC",
+        "label": "INFLUENCED"
+      },
+      {
+        "from": "method-wupalmer",
+        "to": "method-tbk",
+        "label": "INFLUENCED"
+      },
+      {
+        "from": "method-wupalmer",
+        "to": "method-zhou",
+        "label": "INFLUENCED"
+      },
+      {
+        "from": "method-jiang",
+        "to": "method-othman",
+        "label": "INFLUENCED"
+      },
+      {
+        "from": "method-wupalmer",
+        "to": "method-treebased",
+        "label": "INFLUENCED"
+      },
+      {
+        "from": "method-treebased",
+        "to": "method-schlicker",
+        "label": "INFLUENCED"
+      },
+      {
+        "from": "method-treebased",
+        "to": "method-maguitman",
+        "label": "INFLUENCED"
+      }
+    ]
+  }

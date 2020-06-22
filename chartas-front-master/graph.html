@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script src="node_modules/vis-network/dist/vis-network.js"></script>
+        <link href="node_modules/vis-network/dist/vis-network.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/graph.css"/>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="./index.html">Home</a>
+            <a href="chronology.html">Chronology</a>
+            <a href="./map.html">Map</a>
+            <a href="./graph.html">Graph</a>
+            <div class="topnav-right">
+                <a href="./manage.html">Manage</a>
+                <a href="./settings.html">Settings</a>
+                <button id="mode">Offline</button>
+            </div>
+        </div>
+
+        <div class="left-panel">
+            <div class="inflator">
+                <input type="file" id="inflateFile" value="Import"/>
+                <button id="import" onclick="inflate()">Inflate</button>
+                <label for="start">Start date:</label>
+                <input type="text" id="start" name="start" placeholder="1000-01-01">
+                <label for="end">End date:</label>
+                <input type="text" id="end" name="end" placeholder="1001-10-10">
+            </div>
+
+            <div class="inspector">
+                <p id="label"></p>
+                <p id="parameter_1"></p>
+                <p id="parameter_2"></p>
+                <p id="parameter_3"></p>
+                <p id="parameter_4"></p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="mynetwork"></div>
+        </div>
+
+        <script type="text/javascript" src="scripts/graphs.js"></script>
+        <script type="text/javascript" src="scripts/utils.js"></script>
+    </body>
+</html>

@@ -1,0 +1,212 @@
+{
+    "events": [
+      {
+        "id": "method-contrast",
+        "content": "Feature-based - Contrast Model of Similarity",
+        "start": "1977-01-01",
+        "end": "2003-01-01",
+        "description": "Similarity of the objects as linear combination or a contrast of the measures of their common and disctinctive features. He defines similarity as a matching process. He also introduced less known ration model where he describest similarity as a function of common features devided by the number of all common and disjunctive features of both stimuli.",
+        "references" : ["Features of Similarity"]
+      },
+      {
+        "id": "method-shortestpath",
+        "content": "Structure-based - Shortest Path",
+        "start": "1989-01-01",
+        "end": "2003-01-01",
+        "description": "It is measured by subtracting the shortest path between the concepts in the hierarchy from doubled longest path in the hierarchy between the concepts.",
+        "references" : ["Development and application of a metric on semantic nets"]
+      },
+      {
+        "id": "method-weighted",
+        "content": "Structure-based - Weighted Links",
+        "start": "1994-01-01",
+        "end": "1996-01-01",
+        "description": "Information content of the first class in the noun hierarchy that subsumes both classes. ",
+        "references" : ["Using WordNet as a knowledge base for measuring semantic similarity between words"]
+      },
+      {
+        "id": "method-wupalmer",
+        "content": "Structure-based - Wu and Palmer",
+        "start": "1994-01-01",
+        "end": "2008-01-01",
+        "description": "Ratio between the doubled distance from most specific comon concept to the root concept and sum of distances between the concepts and most specific comon concept and agan doubled distance from most specific comon concept to the root concept.",
+        "references" : ["Verbs semantics and lexical selection"]
+      },
+      {
+        "id": "method-jiang",
+        "content": "Node-based - Jiang and Conrath",
+        "start": "1997-01-01",
+        "end": "2008-01-01",
+        "description": "The distance between concepts in this method is the difference between sum of the information content of those two concepts and information content of the closest parent that subsumes them both.",
+        "references" : ["Semantic Similarity Based on Corpus Statistics and Lexical Taxonomy"]
+      },
+      {
+        "id": "method-IC",
+        "content": "Node-based - Information Content",
+        "start": "1990-01-01",
+        "end": "2006-01-01",
+        "description": "The method uses shared information content that is informtion content of the concepts' parents (in the hierarchy) to determine the similarity between them.",
+        "references" : ["Semantic Similarity in a Taxonomy: An Information-Based Measure and its Application to Problems of Ambiguity in Natural Language"]
+      },
+      {
+        "id": "method-treebased",
+        "content": "Node-based - Tree-based similarity",
+        "start": "1998-01-01",
+        "end": "2006-01-01",
+        "description": "The Lin's measure presents the similarity as the ration between the LCS IC and the sum of IC of considered concepts.",
+        "references" : ["An Information-Theoretic Definition of Similarity"]
+      },
+      {
+        "id": "method-ahmd",
+        "content": "Edge-based - AHMD Value",
+        "start": "2005-01-01",
+        "end": "2005-12-01",
+        "description": "We first evaluate the functional relationships among genes from three different perspectives: one based on GO assignments and the other two based on comparative genome analysis. We, then, combine these different measures by using a Bayesian inference to predict functional modules.",
+        "references" : ["Prediction of functional modules based on comparative genome analysis and Gene Ontology application"]
+      },
+      {
+        "id": "method-pozoetal",
+        "content": "Edge-based - Pozo et al.",
+        "start": "2008-01-01",
+        "end": "2008-12-01",
+        "description": "We propose a new method to derive 'functional distances' between GO terms that is based on the simultaneous occurrence of terms in the same set of Interpro entries, instead of relying on the structure of the GO.",
+        "references" : ["Defining functional distances over Gene Ontology"]
+      },
+      {
+        "id": "method-intelligo",
+        "content": "Edge-based - IntelliGO",
+        "start": "2010-01-01",
+        "end": "2010-12-01",
+        "description": "We present here a new semantic similarity measure called IntelliGO which integrates several complementary properties in a novel vector space model. The coefficients associated with each GO term that annotates a given gene or protein include its information content as well as a customized value for each type of GO evidence code. The generalized cosine similarity measure, used for calculating the dot product between two vectors, has been rigorously adapted to the context of the GO graph.",
+        "references" : ["IntelliGO: a new vector-based semantic similarity measure including annotation origin"]
+      },
+      {
+        "id": "method-treeascend",
+        "content": "Edge-based - \"Tree Ascending\" classification algorithm",
+        "start": "2002-01-01",
+        "end": "2002-12-01",
+        "description": "Proposing a “tree ascending” classification algorithm which extends the kNN method by making use of the taxonomic similarity between nearest neighbors. ",
+        "references" : ["Taxonomy learning. Proceedings of the 19th international conference on Computational linguistics"]
+      },
+      {
+        "id": "method-rodriguez",
+        "content": "Edge-based - \"Tree Ascending\" classification algorithm",
+        "start": "2003-01-01",
+        "end": "2006-01-01",
+        "description": "Proposing a “tree ascending” classification algorithm which extends the kNN method by making use of the taxonomic similarity between nearest neighbors. ",
+        "references" : ["Determining semantic similarity among entity classes from different ontologies", "Taxonomy learning: factoring the structure of a taxonomy into a semantic classification decision"]
+      },
+      {
+        "id": "method-xsimilarity",
+        "content": "Feature-based - X-Similarity",
+        "start": "2006-01-01",
+        "end": "2006-12-01",
+        "description": "X-Similarity relies on matching between synsets and term description sets. The term description sets contain words extracted by parsing term definitions (“glosses” in WordNet or “scope notes” in MeSH). Two terms are similar if their synsets or description sets or, the synsets of the terms in their neighborhood (e.g., more specific and more general terms) are lexically similar.",
+        "references" : ["X-Similarity: Computing Semantic Similarity between Concepts from Different Ontologies"]
+      },
+      {
+        "id": "method-wang",
+        "content": "Hybrid - Wang et al.",
+        "start": "2007-01-01",
+        "end": "2007-12-01",
+        "description": "GO term is turned into a numeric string and then the similarity is calculated based on them.",
+        "references" : ["A new method to measure the semantic similarity of GO terms"]
+      },
+      {
+        "id": "method-othman",
+        "content": "Hybrid - Othman et al.",
+        "start": "2008-01-01",
+        "end": "2008-12-01",
+        "description": "The genetic similarity algorithm combines semantic similarity measure algorithm with parallel genetic algorithm. The semantic similarity measure algorithm is used to compute the similitude strength between the Gene Ontology terms. Then, the parallel genetic algorithm is employed to perform batch retrieval and to accelerate the search in large search space of the Gene Ontology graph.",
+        "references" : ["A genetic similarity algorithm for searching the Gene Ontology terms and annotating anonymous protein sequences"]
+      },
+      {
+        "id": "method-li",
+        "content": "Structure-based - Li et. al",
+        "start": "2003-01-01",
+        "end": "2003-12-01",
+        "description": "Non linear function combining taxonomy depth, shortest path between concepts and a \"semantic vector\" to calculate similarity with arbitrary weights defined by the user.",
+        "references" : ["An approach for measuring semantic similarity between words using multiple information sources"]
+      },
+      {
+        "id": "method-knappe",
+        "content": "Hybrid - Knappe",
+        "start": "2008-01-01",
+        "end": "2008-12-01",
+        "description": "Similarity method based on decomposition, upwards expansion and aggregation of possible paths between concepts based on the notion of shared nodes.",
+        "references" : ["On similarity measures for content-based querying"]
+      },
+      {
+        "id": "method-zhou",
+        "content": "Hybrid -  Zhou et al.",
+        "start": "2008-01-01",
+        "end": "2008-12-01",
+        "description": "The model takes the path length between two concepts and IC value of each concept as its metric, furthermore, the weight of two metrics can be adapted artificially",
+        "references" : ["New model of semantic similarity measuring in wordnet"]
+      },
+      {
+        "id": "method-grasm",
+        "content": "Node-based - GraSM - Graph-based Similarity Measure",
+        "start": "2005-01-01",
+        "end": "2005-12-01",
+        "description": "When calculating the semantic similarity of two concepts, GraSM selects the disjunctive common ancestors rather than only using the most informative common ancestor.",
+        "references" : ["Semantic Similarity over the Gene Ontology: Family Correlation and Selecting Disjunctive Ancestors"]
+      },
+      {
+        "id": "method-schlicker",
+        "content": "Node-based - Schlicker et al.",
+        "start": "2006-01-01",
+        "end": "2006-12-01",
+        "description": "The method relies on two semantic similarity measures; simRel and funSim. One measure (simRel) is applied in the comparison of the biological processes found in different groups of organisms. The other measure (funSim) is used to find functionally related gene products within the same or between different genomes.",
+        "references" : ["A new measure for functional similarity of gene products based on Gene Ontology"]
+      },
+      {
+        "id": "method-semanticsignature",
+        "content": "Node-based - Semantic Signature",
+        "start": "2013-01-01",
+        "end": "2013-12-01",
+        "description": "Proposing new way of representing semantic meaning \"Semantic Signature\" + 3 methods for comparing these signatures; a unified approach to semantic similarity across multiple representation levels from senses to documents; unified representation of the meaning of an arbitrarily-sized piece of text, referred to as a lexical item, using a sense-based probability distribution; alignment-based method for word sense disambiguation.",
+        "references" : ["Align, Disambiguate, and Walk: Random walks on Semantic Networks"]
+      },
+      {
+        "id": "method-maguitman",
+        "content": "Node-based - Maguitman et al.",
+        "start": "2005-01-01",
+        "end": "2005-12-01",
+        "description": "It measures similarity in similar way as Lin's method, but it generalizes it into ontology concept. The LCS for example is defined by adding weights to different types of connections and measuring the total score.",
+        "references" : ["Algorithmic Detection of Semantic Similarity"]
+      },
+      {
+        "id": "method-mp",
+        "content": "Semantic - MP",
+        "start": "2016-01-01",
+        "end": "2016-12-01",
+        "description": "First decomposing the concepts into semantic primes, then incorporating filtering out the terms that have not been activated by at least two of the start activations.Then it's normalised by the number of start activation to obtain semantic distance.",
+        "references" : ["Design and Use of a Semantic Similarity Measure for Interoperability Among Agents"]
+      },
+      {
+        "id": "method-tbk",
+        "content": "Structure-based - TBK",
+        "start": "2006-01-01",
+        "end": "2006-12-01",
+        "description": "It is ratio between distance from root to closest common ancestor of 2 terms and the path between terms routed through root node. Minus a Penalty Function (which penalizes only neighboring nodes).",
+        "references" : ["A New Similarity Measure based on Edge Counting"]
+      },
+      {
+        "id": "method-leacock",
+        "content": "Structure-based - Leacock and Chodorow",
+        "start": "1994-01-01",
+        "end": "1994-12-01",
+        "description": "Calculates similarity as a log of, divided by doubled max hierarchy depth, shortest path between the terms.",
+        "references" : ["Filling in a sparse training space for word sense identification"]
+      },
+      {
+        "id": "method-hso",
+        "content": "Structure-based - HSO",
+        "start": "1998-01-01",
+        "end": "1998-12-01",
+        "description": "It calculates relatedness between concepts using the path distance between the concept nodes, number of changes in direction of the path connecting two concepts and the allowableness of the path. If there is a close relation between meanings of two concepts or words, then the concepts are said to be semantically related to each other.",
+        "references" : ["Lexical chains as representations of context for the detection and correction of malapropisms"]
+      }
+    ]
+  }

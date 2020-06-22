@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+    </head>
+   <body>
+       <div class="topnav">
+           <a class="active" href="./index.html">Home</a>
+           <a href="chronology.html">Chronology</a>
+           <a href="./map.html">Map</a>
+           <a href="./graph.html">Graph</a>
+           <div class="topnav-right">
+               <a href="./manage.html">Manage</a>
+               <a href="./settings.html">Settings</a>
+               <button id="mode">Offline</button>
+           </div>
+       </div>
+
+
+       <div class="left-panel">
+           <div class="inspector">
+               <label for="hostname">Host Name:</label>
+               <input type="text" id="hostname">
+               <button id="save" onclick="save()">Save</button>
+           </div>
+       </div>
+
+       <div class="content">
+           <p id="current_hostname"></p>
+           <p id="current_inflatepath"></p>
+       </div>
+
+       <script type="text/javascript" src="scripts/settings.js"></script>
+       <script type="text/javascript" src="scripts/utils.js"></script>
+   </body>
+</html>
